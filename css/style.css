@@ -1,0 +1,113 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+ :root{
+   --page-color: rgba(255, 238, 173, 0.2);
+   --yellow: #FFEEAD;
+   --brown: #8B330C;
+   --btn-log: #FFAD60;
+ }
+
+ *{
+    font-family: "Open Sans", Arial, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .2s linear;
+ }
+ html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+ body {
+  background: var(--page-color);
+ }
+
+ 
+ /*********** FONT CHU ***********/
+ /* Font chu tren thanh header */
+ .heading,
+ .heading a,
+  a.nav-link {
+   font-weight: bold;
+   font-size: 1.1rem;
+   color: var(--brown);
+   text-transform: uppercase;
+   line-height: 1rem;
+ }
+
+/* Font chu trong muc item tren thanh header */
+ .title li a{
+   font-size: 1rem;
+   color: var(--brown);
+   background-color: var(--yellow);
+ }
+
+
+ .btnlogin{
+   padding: .5rem 1rem;
+   border-radius: 1rem;
+   text-transform: uppercase;
+   cursor: pointer;
+   font-size: .9rem;
+   font-weight: bold;
+   color: white;
+   background-color: var(--btn-log);
+ }
+
+.btnlogin:hover {
+   color: var(--btn-log);
+   background-color: white;
+}
+
+ .navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: var(--yellow);
+   padding: 0 !important;
+  
+ }
+
+ .navbar-brand{
+    margin-left: 1.5rem;
+   padding: 0 !important;
+ }
+
+ .container-fluid {
+  margin-right: .75rem !important;
+
+ }
+
+ .navbar-collapse {
+   justify-content: center;
+ }
+
+ .nav-link {
+  padding: 0 1.3rem !important;
+ }
+ img.rounded-pill {
+    width: 70px;
+
+ }
+
+ .dropdown-menu {
+  margin: .5rem 0 0 1.3rem !important;
+  /* margin-top: 1.5rem !important;
+  margin-left: 1.3rem !important; */
+  padding: 0 1rem 0 0!important;
+ }
+
+ .dropdown-item {
+  background-color: white !important;
+  border-radius: .2rem !important;
+  margin: 0 .5rem;
+ }
+
+ .dropdown-item:hover {
+  background-color: var(--yellow) !important;
+  border-radius: .2rem;
+ }
+
