@@ -14,8 +14,10 @@
     outline: none; border:none;
     text-decoration: none;
     transition:all .2s linear;
+    
  }
  html{
+  font-size: 62.5% !important;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6.5rem;
@@ -32,26 +34,33 @@
  .heading a,
   a.nav-link {
    font-weight: bold;
-   font-size: 1.1rem;
+   font-size: 1.5rem;
    color: var(--brown);
    text-transform: uppercase;
    line-height: 1rem;
  }
 
+
 /* Font chu trong muc item tren thanh header */
  .title li a{
-   font-size: 1rem;
+   font-size: 1.6rem;
    color: var(--brown);
    background-color: var(--yellow);
  }
 
+ .container .btn {
+  align-items: right !important;
+  justify-content: right !important;
+  float: right !important;
+  align-content: right;
+ }
 
  .btnlogin{
    padding: .5rem 1rem;
    border-radius: 1rem;
    text-transform: uppercase;
    cursor: pointer;
-   font-size: .9rem;
+   font-size: 1.5rem;
    font-weight: bold;
    color: white;
    background-color: var(--btn-log);
@@ -63,7 +72,7 @@
 }
 
  .navbar {
-   position: fixed;
+   /* position: fixed; */
    top: 0;
    left: 0;
    background-color: var(--yellow);
@@ -72,14 +81,10 @@
  }
 
  .navbar-brand{
-    margin-left: 1.5rem;
    padding: 0 !important;
  }
 
- .container-fluid {
-  margin-right: .75rem !important;
 
- }
 
  .navbar-collapse {
    justify-content: center;
@@ -90,7 +95,6 @@
  }
  img.rounded-pill {
     width: 70px;
-
  }
 
  .dropdown-menu {
@@ -110,4 +114,73 @@
   background-color: var(--yellow) !important;
   border-radius: .2rem;
  }
+
+/*********** FOOTER ***********/
+ footer {
+  background-color: var(--brown);
+  padding: 1.6rem 2.4rem;
+ }
+
+
+.footer-heading {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.footer .list-inline li a,
+.footer .copyright{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer .copyright {
+  margin-top: 1rem;
+}
+
+ @media (max-width:991px){
+  html{
+     font-size: 55% !important;
+  }
+}
+
+@media (max-width:768px){
+  html {
+    font-size: 45% !important;
+  }
+  .heading,
+  .heading a,
+   a.nav-link {
+    /* font-size: 1.2rem; */
+   }
+
+   .btnlogin{
+    /* font-size: 1.2rem; */
+   }
+  
+}
+
+@media (max-width:450px){
+
+   html{
+     font-size: 40% !important;
+  }
+
+  .heading,
+  .heading a,
+   a.nav-link {
+    /* font-size: .8rem; */
+   }
+
+   .btnlogin{
+    /* font-size: .9rem; */
+   }
+
+
+
+}
 
